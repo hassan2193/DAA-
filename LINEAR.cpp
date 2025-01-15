@@ -4,7 +4,7 @@ int main()
 {
     int arr[]={12,13,14,15,16,17,18};
     int size=7;
-    int key=177;
+    int key=14;
     int found=0;
     int count=0;
     
@@ -13,12 +13,12 @@ int main()
         count++;
         if(arr[i]==key)
         {
-            cout<<"target is found and number of key comparisons were "<<count;
+            cout<<"target is found and number of key comparisons were "<<count<<" and index at"<<count-1;
             found=1;
             break;
         }
     }
     
     if(found==0)
-    cout<<"target is not found and number of comparisons were"<<count;
+    cout<<"target is not found and number of comparisons were "<<count;
 }
